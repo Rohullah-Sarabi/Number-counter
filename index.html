@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item content">
+            <div id="show">0</div>
+            <button onclick="Increase();" id="button">Increase</button>
+            <button onclick="Reduce();" id="button">Reduce</button>
+        </div>
+    </div>
+    <script>
+        var i=0;
+        var text = document.getElementById("show");
+        function Increase(){
+            text.innerHTML = ++i;
+        }
+        function Reduce(){
+            text.innerHTML = --i;
+        }
+    </script>
+</body>
+</html>
